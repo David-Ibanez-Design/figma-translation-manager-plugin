@@ -1,0 +1,24 @@
+@import '@comvex-jp/digima-ui/dist/scss/theme';
+@import '../ui/scss/variables.scss';
+
+.addNew{
+    width: 100%;
+}
+
+textarea{
+    border: 1px solid $nl-600;
+    border-radius: $br;
+    padding: $space-1 $space-2;
+    background-color: $nl-300;
+    font-size: 14px;
+
+    &:hover{
+        border: 1px solid $nd-600; 
+    }
+
+    &:focus{
+        border: 1px solid $nd-600;
+        background-color: $nl-0;
+        outline: none;
+    }
+}

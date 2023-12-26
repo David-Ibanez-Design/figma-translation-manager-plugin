@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/bootstrap";
+@import '@comvex-jp/digima-ui/dist/scss/theme';
+@import '../ui/scss/variables.scss';
+
+.containerSidePanel{
+    width: 350px;
+    max-width: 350px;
+    min-width: 350px;
+    position: relative;
+    border-left: 1px solid $nl-600;
+    box-shadow: 0 2px 5px 0 $nl-600;
+    padding: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+    h2{
+        font-size: 16px;
+        text-align: center;
+        color: $nd-700;
+    }
+}
+
+.loadingOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($nd-900, .8);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    color: $nl-0;
+    align-items: center;
+}

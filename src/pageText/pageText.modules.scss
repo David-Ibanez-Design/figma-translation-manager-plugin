@@ -1,0 +1,152 @@
+@import '@comvex-jp/digima-ui/dist/scss/theme';
+@import '../ui/scss/variables.scss';
+
+.chips{
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.danger{
+    color:$red-700;
+
+    &:hover{
+        color:$red-800;       
+    }
+}
+
+.overlay{
+    background: $nl-0;
+    position: absolute;
+    top:0;
+    left:0; 
+    display: none;
+    z-index: 3;
+    line-height: 100vh;
+    justify-content: center;
+    color: $blue-700;
+    cursor: pointer;
+}
+
+.toggleWindow{
+    cursor: pointer;
+    font-size: 13px;
+    color: $blue-700;
+    border-left: 1px solid $nl-600;
+    padding-left: $space-1;
+}
+
+form{
+    overflow: scroll;
+    height: calc(100vh - (28px + 24px + 45px));
+}
+
+.header{
+    background: #edf1f3;
+    box-shadow: inset 0px -1px 0px $nl-600;
+}
+
+.tabs{
+
+    .tab{
+        cursor: pointer;
+        padding: $space-1 $space-2;
+        font-size: 13px;
+        color: $nd-600;
+        text-align: center;
+
+        &:hover{
+            color: $nd-900;          
+        }
+
+        &:not(.active){
+            box-shadow: inset 0px -1px 0px $nl-600;
+        }
+
+        &.active{
+            box-shadow: inset 0px 3px 0px $lime-500;
+            border-radius: 4px 4px 0 0;
+            font-weight: bold;
+            color: $nd-900;
+            background: $nl-300;
+            border-left: 1px solid $nl-600;
+            border-right: 1px solid $nl-600;
+        }
+    }
+ 
+}
+
+.textList{
+    
+    background-color: $nl-300 !important;
+
+    .labelContainer{
+        display: none;
+    }
+
+    label.terms{
+        cursor: pointer;
+        padding: $space-2 $space-3;
+        margin-bottom: $space-2;
+        border: 1px solid $nl-600;
+        background-color: $nl-0;
+        border-radius: 0.25rem;
+        border-radius: $br;
+        box-shadow: inset 4px 0px 0px $lime-500;
+        position: relative;
+
+        &.borderWarning{
+            box-shadow: inset 4px 0px 0px $red-500;
+        }
+
+        &.checked {
+            background-color: $lime-400;
+            border: 1px solid $lime-600;
+          }
+
+        &:hover:not(.checked){
+            border: 1px solid $nd-800;
+        }
+
+        &:hover{
+            .actionContainer{
+                display: flex;
+            };
+        }
+
+        .actionContainer{
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            padding: 0 $space-2;
+            background: $nl-0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .actionContainerChecked{
+            background: $lime-400;
+        }
+
+        a{
+            font-size: 12px;
+        }
+    }
+
+    .textValue{
+        font-size: 13px;  
+ 
+    }
+
+    .status{
+        padding: 0;
+        color: $lime-700;
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    .warning{
+        color: $red-500;
+    }
+
+}
