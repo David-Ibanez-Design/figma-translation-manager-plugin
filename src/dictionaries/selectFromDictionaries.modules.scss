@@ -1,0 +1,54 @@
+@import '@comvex-jp/digima-ui/dist/scss/theme';
+@import '../ui/scss/variables.scss';
+
+.textList{
+
+    max-width: 500px;
+
+    label{
+        cursor: pointer;
+        padding: $space-2;
+        font-size: 12px;
+        border-radius: $br;
+
+        &:hover{
+            background-color: $nl-300;
+        }
+    }
+
+    .search, select{
+        border: 1px solid $nl-600;
+        border-radius: $br;
+        padding: $space-1 $space-2;
+        background-color: $nl-300;
+        font-size: 12px;
+
+        &:hover{
+            border: 1px solid $nd-600; 
+        }
+    }
+
+    .search:focus{
+        border: 1px solid $nd-600;
+        outline: none;
+    }
+
+    .termValue{
+        font-size: 12px;
+        margin-bottom: -2px;
+    }
+
+    .dictionaryName{
+        color: $nd-600;
+        font-style: italic;
+    }
+
+    select{
+        width: 120px;
+    }
+
+    select .placeholder{
+        color: $nd-600;
+    }
+
+}

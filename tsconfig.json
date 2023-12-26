@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "strictNullChecks": false,
+    "target": "es6",
+    "jsx": "react",
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@figma"
+    ]
+  },
+  "include": 
+  ["src/**/*.ts", 
+  "src/**/*.tsx", 
+  "src/**/*.jsx", "src/dictionaries/fetchDictionaries.jsx"]
+}

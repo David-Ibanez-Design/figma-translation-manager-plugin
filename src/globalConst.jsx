@@ -1,0 +1,22 @@
+export const LANG = 'ja';
+export const TRANS_IDENTIFIER = 'T:';
+export const UNTRANSLATED = 'T:Null';
+export const TRANS_SEPARATOR = '->';
+export const MANUAL_TRANSLATION = 'Manual';
+export const NOT_TRANSLATED = 'Not translated';
+export const TRANSLATION_PAGE_NAME = 'Translations';
+export const TRANSLATION_TABLE_NAME = 'Translation table';
+export const DEFAULT_LAYER_NAME = 'Label';
+export const DICTIONARIES_COL = "Dictionaries";
+export const COLUMNS = ["Term", "Dictionary", "EN term", "JP term"];
+export const EMPTY_COL = "ー";
+export const [termFrameName, dictionaryNodeName, enTermNodeName, jpTermNodeName] = COLUMNS;
+export const FONT_BOLD = { family: "Inter", style: "Bold" };
+export const FONT_REGULAR = { family: "Inter", style: "Regular" }; 
+export const pluginUIHeight = 500;
+export const pluginUIWidth = 960;
+export const pluginUI = { themeColors: true, height: pluginUIHeight, width: pluginUIWidth }
+export const dictionaryContents = "dictionaries-content";
+export const displayTime = 2000;
+
+export const PAGE_TO_EXCLUDE = ["[","!", "OLD", "Post MVP"];

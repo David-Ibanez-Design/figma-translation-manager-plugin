@@ -1,0 +1,109 @@
+@import '@comvex-jp/digima-ui/dist/scss/theme';
+@import './variables.scss';
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+    color: $blue-700;
+
+    &:hover{
+        text-decoration: underline !important;
+    }
+}
+
+::placeholder{
+    color: $nd-600; 
+}
+
+.button {
+    border: 1px solid transparent;
+    border-radius: $br;
+    color: $nl-0;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: $space-2 $space-3;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    &.size-small{
+        font-size: 12px !important;
+        padding: $space-1 $space-2 !important
+    }
+  
+}
+
+.button.disabled{
+    background: $nl-600;
+    border-color: $nl-600;
+    box-shadow: none;
+    color: $nd-700;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.theme-primary {
+    background: linear-gradient(0deg, $violet-700 0, $violet-400 100%);
+    border-color: $violet-800;
+
+    &:hover:not(:disabled):not(.disabled) {
+        background: linear-gradient(0deg, $violet-400 0, $violet-400 100%);
+    }
+
+    &:active:not(:disabled):not(.disabled) {
+        background: linear-gradient(0deg, $violet-400 0, $violet-400 100%);
+        box-shadow: $shadow-md-inset transparentize($nd-800, 0.5);
+    }
+}
+
+.theme-secondary {
+    background: linear-gradient(0deg, $nl-400 0, $nl-0 100%);
+    border-color: $nl-700;
+    color: $nd-700;
+
+    &:hover {
+        background: linear-gradient(0deg, $nl-300 0, $nl-0 100%);
+        color: $nd-900;
+    }
+
+    &:active {
+        background: $nl-300;
+        border-color: $nl-800;
+        box-shadow: $shadow-md-inset transparentize($nl-800, 0.5);
+    }
+}
+
+.action-bar{
+    width: 100%;
+    border-top: 1px solid $nl-600;
+    padding: $space-2 $space-3;
+    position: sticky;
+    bottom: 0;
+    background: $nl-0;
+}
