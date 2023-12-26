@@ -11,7 +11,6 @@ const SelectFromDictionaries = ({className, isProcessing, dictionaries, setIsAct
   let dictionaryContent = {};
   let dictionaryList = dictionaries;
   const searchRef = useRef(null);
-
   const itemToDisplay = 99;
 
   useEffect(() => {
@@ -19,7 +18,6 @@ const SelectFromDictionaries = ({className, isProcessing, dictionaries, setIsAct
   }, [searchRef]);
     for (const dictionary in dictionaryList) {
       for (const key in dictionaryList[dictionary]) {
-
         dictionaryContent[key] = {
             'dictionary': dictionary,
             'translation': dictionaryList[dictionary][key],

@@ -12,9 +12,7 @@ export const fetchDictionaries = () => {
 
     if(isObjectEmpty(parsedDictionaryContentsIsSet)) {
         const sampleDictionaries = {"attributes": attributes, "countries": countries, "buttons": buttons, "login": login};
-        figma.root.setPluginData(dictionaryContents, JSON.stringify(sampleDictionaries));
-
-        return sampleDictionaries
+        return figma.root.setPluginData(dictionaryContents, JSON.stringify(sampleDictionaries));
     }
 
     return parsedDictionaryContentsIsSet
